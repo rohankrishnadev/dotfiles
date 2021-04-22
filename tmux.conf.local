@@ -1,0 +1,13 @@
+# Check if tpm is installed, if not install it
+# From
+# https://github.com/tmux-plugins/tpm/blob/master/docs/automatic_tpm_installation.md
+if "test ! -d ~/.tmux/plugins/tpm" \
+   "run 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm && ~/.tmux/plugins/tpm/bin/install_plugins'"
+
+set -g @tpm_plugins '         \
+  arcticicestudio/nord-tmux   \
+  tmux-plugins/tmux-yank      \
+'
+set -g default-terminal 'xterm-256color'
+
+run '~/.tmux/plugins/tpm/tpm'
