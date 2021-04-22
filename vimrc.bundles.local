@@ -2,3 +2,4 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Make sure you download and unzip dracula_pro in the bundles folder
 Plug '~/.bundles/dracula_pro', {'as': 'dracula_pro'}
+Plug 'arcticicestudio/nord-vim', {'as': 'nord'}
